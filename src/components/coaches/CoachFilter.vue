@@ -24,8 +24,8 @@ export default {
       filters: {
         frontend: true,
         backend: true,
-        career: true
-      }
+        career: true,
+      },
     };
   },
   methods: {
@@ -34,13 +34,13 @@ export default {
       const isActive = event.target.checked;
       const updatedFilters = {
         ...this.filters,
-        [inputId]: isActive
+        [inputId]: isActive,
       };
       this.filters = updatedFilters;
       this.$emit('change-filter', updatedFilters);
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style scoped>
